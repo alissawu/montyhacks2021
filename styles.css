@@ -36,10 +36,10 @@ nav{
     text-decoration: none; /*no underline*/
     font-size: 17px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #1d2fd8;
+    color: #ffd700;
     padding: 0 20px; /*space btwn the links*/
 
   }
   ul li a:hover {
-    color: #ffd700;
+    color: #fff5bf;
   }

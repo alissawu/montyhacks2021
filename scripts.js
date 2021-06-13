@@ -228,7 +228,7 @@ function restartGame() {
 //CHECKS IF YOU SHOULD DIE OR NOT
 function isDead() {
   if (lifesaver == false) {
-    alert("You Died!\nYou got " + score + " points!");
+    alert("You died :(\nYou got " + score + " points!");
     restartGame(); // after pressing okay on alert, restarts game back to original properties
     location.reload();
   }
@@ -241,7 +241,7 @@ function lifesaverFalse() {
   lifesaver = false;
 }
 
-//DRAWS LABELS ONTO THE SCREEN, CURRENTLY BUGGY AF
+//DRAWS LABELS ONTO THE SCREEN
 function drawScore() {
   ctx.font = "26px Arial";
   ctx.fillStyle = "#0095DD";
