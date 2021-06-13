@@ -123,7 +123,7 @@ class Mask {
   update() {
     //collision detection, brings the player up for like 10 seconds
     if (this.x < p.x + p.w && this.x + this.w > p.x && this.y < p.y + p.h && this.y + this.h > p.y) {
-      p.y -= 100;
+      p.y -= 400;
       var q = Math.floor(Math.random() * randomQuestions.length);
       var answer = prompt(
         `${randomQuestions[q].question} \n A. ${randomQuestions[q].optionA} \n B. ${randomQuestions[q].optionB} \n C. ${randomQuestions[q].optionC} \n D. ${randomQuestions[q].optionD}`
@@ -136,7 +136,7 @@ class Mask {
         setTimeout(falseJetpack, 2000);
       } else {
         lifesaver = false;
-        setTimeout(isDead,300);
+        setTimeout(isDead, 200);
       }
     }
   }
@@ -233,7 +233,7 @@ function isDead() {
     location.reload();
   }
   if (lifesaver == true) {
-    setTimeout(lifesaverFalse, 170); //used up the lifesaver
+    setTimeout(lifesaverFalse,200); //used up the lifesaver
   }
 }
 
